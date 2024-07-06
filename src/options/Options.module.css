@@ -1,0 +1,45 @@
+.container {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.good {
+  background-color: rgb(105, 209, 105);
+  &:hover {
+    background-color: rgb(55, 173, 55);
+  }
+  &:active {
+    background-color: green;
+  }
+}
+
+.neutral {
+  background-color: rgb(255, 189, 68);
+  &:hover {
+    background-color: orange;
+  }
+  &:active {
+    background-color: rgb(167, 109, 0);
+  }
+}
+
+.bad {
+  background-color: rgb(255, 117, 117);
+  &:hover {
+    background-color: red;
+  }
+  &:active {
+    background-color: rgb(181, 0, 0);
+  }
+}
+
+.reset {
+  background-color: rgb(168, 168, 168);
+  &:hover {
+    background-color: gray;
+  }
+  &:active {
+    background-color: rgb(73, 73, 73);
+  }
+}
