@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Description from "./components/description/Description";
 import Options from "./components/options/Options";
 import Feedback from "./components/feedback/Feedback";
-import DefaultNotification from "./components/default notification/DefaultNotification";
+import Notification from "./components/notification/Notification";
+import "modern-normalize";
 
 function App() {
   const [options, setOptions] = useState(() => {
@@ -46,7 +47,7 @@ function App() {
         totalFeedback={totalFeedback}
       />
       {totalFeedback === 0 ? (
-        <DefaultNotification />
+        <Notification />
       ) : (
         <Feedback
           options={options}
